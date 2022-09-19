@@ -7,5 +7,21 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "homepage": "https://github.com/debabratadev/angular-flowchart",
+  "license" : "MIT",
+  "author": {
+    "name" : "Debabrata Patra",
+    "email" : "debabratapatra12@gmail.com",
+    "url" : "https://curiouslinks.com//"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/debabratadev/angular-flowchart.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/debabratadev/angular-flowchart/issues",
+    "email" : "debabratapatra12@gmail.com"
+  },
+  "keywords": ["Angular", "Flow Chart", "Angular Flowchart"]
 }

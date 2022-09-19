@@ -1,20 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import { DrawingService } from './canvas/services/drawing.service';
+import { InitializeService } from './canvas/services/initialize.service';
 
 @Component({
-  selector: 'lib-angular-flowchart',
+  selector: 'db-angular-flowchart',
   template: `
-    <p>
-      angular-flowchart works!
-    </p>
   `,
   styles: [
   ]
 })
 export class AngularFlowchartComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private drawingService: DrawingService,
+    private initializeService: InitializeService,
+    ) { }
 
   ngOnInit(): void {
+  }
+
+  initialize(container) {
+    const canvas = this.drawingService.createCanvas(container);
+    this.initializeService.initialise(canvas);
   }
 
 }
